@@ -6,8 +6,8 @@ public class Receipt {
     private String name;
     private ArrayList<ReceiptItem> itemList = new ArrayList<>();
 
+    // Constructor
     public Receipt(String name) {
-        // Constructor
         this.name = name;
     }
 
@@ -20,7 +20,7 @@ public class Receipt {
         for (ReceiptItem i : itemList) {
             totalSum += i.calItemPrice();
         }
-        return Math.round(totalSum*100.0)/100.0;
+        return Math.round(totalSum * 100.0) / 100.0;
     }
 
     // Ausgabe aller Zahlen

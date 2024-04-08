@@ -7,7 +7,7 @@ public class ReceiptMain {
         r.add(new ReceiptItem("Magnum", 2, 2.99));
         r.print();
 
-        /* another example for the check of the programm
+        /* Test case
         System.out.println("");
         Receipt y = new Receipt("Obst Shop");
         y.add(new ReceiptItem("Apfel", 3, 0.39));
