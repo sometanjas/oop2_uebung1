@@ -4,7 +4,7 @@ public class ReceiptItem {
     private int count;
     private double price;
 
-    //Constructor
+    //Constructor: Mitglieder direkt mit this. aufrufen
     public ReceiptItem(String product, int count, double price) {
         this.product = product;
         this.count = count;
@@ -18,4 +18,11 @@ public class ReceiptItem {
     public String toString() {
         return product + "\t" + count + "x" + "\t" + price;
     }
+
+    /*
+    * Alternativ:
+    * public void printItemLine() {
+    *   System.out.println(product + "\t" + count + "x" + "\t" + price);
+    * }
+    * */
 }

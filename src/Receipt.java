@@ -21,6 +21,7 @@ public class Receipt {
             totalSum += i.calItemPrice();
         }
         return Math.round(totalSum * 100.0) / 100.0;
+        // Alternative Math.floor((totalSum * 100) / 100);
     }
 
     // Ausgabe aller Zahlen
@@ -29,6 +30,9 @@ public class Receipt {
         System.out.println("---");
         for (ReceiptItem i : itemList) {
             System.out.println(i);
+            //Alternative zu neuer Methode aus ReceiptItem-Classe:
+            // i.printItemLine();
+            // totalSum += i.getItemPrice
         }
         System.out.println("---");
         System.out.println("Summe\t\t" + totalSum());
